@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+
+body {
+  font-family: 'Mukta', sans-serif;
+  color: white;
+  height: 100vh;
+  min-height: 550px;
+  /* background-image: url(http://www.planwallpaper.com/static/images/Free-Wallpaper-Nature-Scenes.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  background-color: black;
+
+  position: relative;
+  overflow-y: hidden;
+}
+
+div {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10%;
+}

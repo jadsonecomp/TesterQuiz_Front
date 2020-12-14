@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TesterQuiz</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+
+    <div class="login-reg-panel">
+
+		<audio id="loginAud" src="/sons/aspecto_solidao.mp3"></audio>
+
+		<div class="login-info-box">
+			<h2 class="font-size"> Já tem uma conta?</h2>
+			<p class="font-size">Clique aqui para fazer o login</p>
+			<label id="label-register" for="log-reg-show">Login</label>
+			<input type="radio" name="active-log-panel" id="log-reg-show"  checked="checked">
+		</div>
+							
+		<div class="register-info-box">
+			<h2 class="font-size">Ainda não tem uma conta?</h2>
+			<p class="font-size">Registre-se agora para poder jogar</p>
+			<label id="label-login" for="log-login-show">Cadastro</label>
+			<input type="radio" name="active-log-panel" id="log-login-show">
+		</div>
+							
+		<div class="white-panel">
+			<form action="" id="formLogin">
+				<div class="login-show">
+					<h2>LOGIN</h2>
+					<input id="inputLoginLogin" type="text" placeholder="Login" autofocus="autofocus" required="required">
+					<input id="inputSenhaLogin" type="password" placeholder="Senha"  required="required">
+					<input type="submit" value="Login">
+					<!-- <a href="">Esqueceu a senha?</a> -->
+				</div>
+			</form>
+			<form action="" id="formCadastro">
+				<div class="register-show">
+					<h2>CADASTRO</h2>
+					<input id="inputNomeCadastro" type="text" placeholder="Nome"  autofocus="autofocus" required="required">
+					<input id="inputEmailCadastro" type="email" placeholder="Email"  required="required">
+					<input id="inputLoginCadastro" type="text" placeholder="Login"  required="required">
+					<input id="inputSenhaCadastro" type="password" placeholder="Senha"  required="required">
+					<!-- <input type="text" placeholder="Foto"> -->
+					<input type="submit" value="Cadastro">
+				</div>
+			</form>
+		</div>
+
+		<!-- <div id='alrt' style="font-Weight: bold"></div> -->
+
+	</div>
+    
+ 
+	<script src="login.js"></script>
+	<script type="module" src="loginCadastro.js"></script>
+
+
+
+</body>
+</html>
