@@ -127,7 +127,8 @@ getNewQuestion = async () => {
     }
 
     questionCounter++
-    progressText.innerText = `${sessionStorage.getItem('login')}: Question ${questionCounter} of ${MAX_QUESTIONS}`
+    //progressText.innerText = `${sessionStorage.getItem('login')}: Questão ${questionCounter} de ${MAX_QUESTIONS}`
+    progressText.innerText = `${sessionStorage.getItem('login')}: Questão ${questionCounter}`
     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
     
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
