@@ -26,7 +26,6 @@ function getScore(id){
 }
 
 startGame = async () => {
-
     jogadorScore = await getScore(sessionStorage.getItem('id'))
 
     for (let index = 0; index < jogadorScore.length; index++) {

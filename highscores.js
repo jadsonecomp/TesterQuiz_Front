@@ -98,17 +98,8 @@ function getMap(jogadores){
 
 startGame = async () => {
 
-    // jogadores = await getJogador()
-    // console.log('jogadores: ', jogadores)
-
-    // jogadorScore = await getMap(jogadores)
-
-    // console.log('jogadorScore: ', jogadorScore)
-
-    // console.log('highScoresList.innerHTML: ', highScoresList.innerHTML)
-
     const pontuacoes = await getScoreGeral()
-
+    
     for (let index = 0; index < pontuacoes.length; index++) {
         
         if(index >=10){
@@ -121,6 +112,7 @@ startGame = async () => {
         highScoresList.innerHTML = highScoresList.innerHTML + `<li class="high-score">${index+1}° ${login} - ${pontuacoes[index].pontuacao} pontos</li>`       
         
     }
+    
 
 
 }
