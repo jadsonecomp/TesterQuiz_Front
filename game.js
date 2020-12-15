@@ -13,8 +13,8 @@ let score = 0
 let questionCounter = 0
 let availableQuestions = []
 
-const URL_PERGUNTA = 'http://localhost:3000/pergunta';
-const URL_CADASTRO_SCORE = 'http://localhost:3000/score';
+const URL_PERGUNTA = 'https://testerquizback.herokuapp.com/pergunta';
+const URL_CADASTRO_SCORE = 'https://testerquizback.herokuapp.com/score';
 
 // let questions = [
 //     {

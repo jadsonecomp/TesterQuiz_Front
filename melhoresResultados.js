@@ -1,13 +1,13 @@
 const highScoresList = document.querySelector('#highScoresList')
 const highScores = JSON.parse(localStorage.getItem("highScores")) || []
 
-const URL_JOGADOR = 'http://localhost:3000/jogador'
+const URL_JOGADOR = 'https://testerquizback.herokuapp.com/jogador'
 
 
 
 function getScore(id){
     try {    
-        return fetch(`http://localhost:3000/score?id_jogador=${id}`, {
+        return fetch(`https://testerquizback.herokuapp.com/score?id_jogador=${id}`, {
             method: 'GET',
             headers: new Headers({
                 'Content-Type': 'application/json'
