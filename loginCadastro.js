@@ -3,8 +3,8 @@
 
 window.addEventListener('load', start);
 
-const URL_CADASTRO = 'https://testerquizback.herokuapp.com/jogador';
-const URL_LOGIN = 'https://testerquizback.herokuapp.com/login';
+const URL_CADASTRO = 'http://localhost:3000/jogador';
+const URL_LOGIN = 'http://localhost:3000/login';
 
 let usuario = ''
 
